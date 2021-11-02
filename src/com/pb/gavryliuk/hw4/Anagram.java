@@ -3,6 +3,11 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Anagram {
+
+    static String examination() {
+        return "Вы ввели ";
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -22,10 +27,9 @@ public class Anagram {
         char[] str1 = s1.toCharArray();
         Arrays.sort(str1);
         if (Arrays.equals(str, str1)) {
-            System.out.println("Вы ввели анаграмму");
+            System.out.println(examination() + "анаграмму");
         } else {
-            System.out.println("Вы ввели не анаграмму");
+            System.out.println(examination() + "не анаграмму");
         }
     }
 }
-
